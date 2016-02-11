@@ -19,5 +19,26 @@ def pythagorean_triplet():
                 return
 
 
+def alternate_method():
+    """
+    a= 2mn; b= m^2 -n^2; c= m^2 + n^2;
+    a + b + c = 1000;
+
+    2mn + (m^2 -n^2) + (m^2 + n^2) = 1000;
+    2mn + 2m^2 = 1000;
+    2m(m+n) = 1000;
+    m(m+n) = 500;
+
+    m>n;
+
+    m= 20; n= 5;
+
+    a= 200; b= 375; c= 425;
+    :return:
+    """
+    print 200 * 375 * 425
+    return
+
 if __name__ == '__main__':
     pythagorean_triplet()
+    alternate_method()
